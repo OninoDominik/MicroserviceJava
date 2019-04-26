@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "f5f7fa77-91be-4581-b00b-a1f9dec54b33",
+		"name": "boulangerie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProduits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9900/produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"produits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduit 1(success)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9900/produits/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"produits",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduit 10 (fail)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9900/produits/10",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"produits",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createGalette",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":10,\"nom\":\"galette\",\"valeur\":20,\"img\":\"url\"}"
+				},
+				"url": {
+					"raw": "localhost:9900/produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"produits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduit 10 (success)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9900/produits/10",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"produits",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
